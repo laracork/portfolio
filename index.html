@@ -1,0 +1,236 @@
+<html>
+
+	<head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+ 	 <link
+    	rel="stylesheet"
+    	href="prism-atom-dark.css"
+    	type="text/css"
+    	media="screen">
+
+  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="prism.ruby.js"></script>
+
+  <title>Lara Corkrey</title>
+  <meta name="description" content="Full stack software engineer who enjoys finding solutions to difficult problems. My skills include: Python, Django, Ruby on Rails, JavaScript, HTML, and CSS. I am a quick learner who thrives in settings that push me to my furthest.">
+
+	</head>
+
+	<body>
+
+    <div class="about-container">
+      <ul>
+        <li><a href="#" class="nav-link">ABOUT</a></li>
+        <li><a href="#code-samples" class="nav-link">CODE SNIPPETS</a></li>
+        <li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+        <li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+        <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+        </ul>
+    <div class="about">
+	
+		<img src="lc.jpg" class="lc" />
+
+		<h1>Lara Corkrey</h1>
+	  
+		<h2>Software Engineer</h2>
+
+		<hr class="grey" />
+
+		<p class="bio">
+	  	Lara is a former high school science teacher currently pursuing a career in software development to create and innovate technology that enables people to live a higher quality of life.
+
+	  </p>
+	   
+	   </div>
+	 </div>
+	<h3 id="code-samples">Code Snippets</h3>
+	<hr class="orange" />
+
+	<div class="box">
+		<h4>Temperature Conversion</h4>
+		<p>
+        This ruby program will prompt the user for a temperature
+        in degrees Celsius and let the user know what the
+        corresponding temperature is in Fahrenheit.
+		</p>
+	</div>
+
+	<div class="box">
+<pre><code class="language-ruby">
+def celcius_to_fahrenheit(num)
+  return num * 1.8 + 32
+end
+
+puts &quot;Enter degrees in Celcius:&quot;
+
+celcius = gets.to_i
+fahrenheit = celcius_to_fahrenheit(celcius).to_i
+
+puts greeting = &quot;The temperature is #{fahrenheit} degrees Fahrenheit&quot; </code></pre>
+	</div>
+
+	<br class="clear" />
+
+	<div class="box">
+		<pre><code class="language-ruby">
+puts &quot;Enter a number&quot;
+n = gets.chomp.to_i
+
+def number_to_ordinal (n)
+     if n % 100 == 11 || n % 100 == 12 || n % 100 == 13
+      return &quot;th&quot; 
+    elsif n % 10 == 1
+        return &quot;st&quot; 
+    elsif n % 10 == 2
+      return &quot;nd&quot;
+    elsif n % 10 == 3
+      return &quot;rd&quot;
+    else
+      return &quot;th&quot;
+    end
+end
+
+puts &quot;Your number is #{n}#{number_to_ordinal (n)}!&quot;</code></pre>
+	</div>
+
+	<div class="box">
+		<h4>Ordinal Challenge</h4>
+  		<p>
+    This ruby program will convert a plain number to the ordinal of the number. So for example, if the user enters 2, it will display 2nd, if the user enters 3, it will display 3rd, etc.
+  		</p>
+	</div>
+
+	<br class="clear" />
+
+	<div class="box">
+		<h4>Foobar</h4>
+  		<p>
+    This ruby program is an adaptation of a classic technical interview problem which displays sequences of the Foobar pattern.
+  		</p>
+	</div>
+
+	<div class="box">
+		<pre><code class="language-ruby">
+puts &quot;How many interations do you want to see?&quot;
+input_num = gets.chomp.to_i
+
+puts = []
+(1..input_num).each do |n| 
+  if n % 3 == 0 &amp;&amp; n % 5 == 0 
+    puts &quot;FooBar&quot;
+  elsif  n % 3 == 0
+   puts &quot;Foo&quot;
+  elsif n % 5 == 0
+    puts &quot;Bar&quot;
+  else 
+    puts (n)
+  end
+end</code></pre>
+	</div>
+
+	<br class="clear" />
+
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="orange" />
+
+    <div class="box">
+      <h4>Quote Generator</h4>
+        <a href="https://splurty-lara-corkrey.herokuapp.com/" target="_blank">
+          <img src="app-screenshots/splurty.png" class="full-width" />
+        </a>
+        <p>
+          A database-powered quote generator with a mobile-first
+          design, using the Ruby on Rails framework, HTML, and CSS.
+          Uses Git and GitHub for version control, and launched
+          on Heroku.
+      	</p>
+    </div>
+    <div class="box">
+      <h4>Yelp Clone</h4>
+      <a href="https://nomster-lara-corkrey.herokuapp.com/" target="_blank">
+        <img src="app-screenshots/nomster.png" class="full-width" />
+      </a>
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+      </p>
+    </div>
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Two-Sided Market Place</h4>
+      <a href="http://flixter-lara-corkrey.herokuapp.com/" target="_blank">
+        <img src="app-screenshots/flixter.png" class="full-width">
+      </a>
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <a href="https://grammable-lara-corkrey.herokuapp.com/" target="_blank">
+        <img src="app-screenshots/grammable.png" class="full-width" />
+      </a>
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+      </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4>Single Page To Do Application</h4>
+      <a href="https://todoster-lara-corkrey.herokuapp.com/" target="_blank">
+        <img src="app-screenshots/todoster.png" class="full-width" />
+      </a>
+      <p>
+        This single-page to-do application features a
+        fluid user interface that, by using JavaScript,
+        allows users to rapidly add dynamic content.
+      </p>
+    </div>
+ 
+    <br class="clear" />
+	<h3 id="skills-and-tools">Skills &amp; Tools</h3>
+	<hr class="orange" />
+	 <p class="skills-and-tools">
+      Lara has developed proficiency and expertise in the following programming languages and
+      comfort with the following tools.
+    </p>
+
+    <div class="icons">
+      <img src="skills-and-tools/github.png" class="icon" />
+      <img src="skills-and-tools/python.png" class="icon" />
+      <img src="skills-and-tools/django.png" class="icon" />
+    <div>
+
+      <br class="clear" />
+      <img src="skills-and-tools/skills.png" class="icon" />
+
+      <div class="contact-me" id="hire-me">
+      	<h3 class="contact-headline">Contact</h3>
+      	<hr class="orange" />
+      	<p class="contact-info">
+      		Currently entertaining new opportunities. 
+      <br class="clear" />
+      		Please get in touch via email:
+       	</p>
+
+       	<p>
+       	 <a href="mailto:laracorkrey@gmail.com" class="contact-link">
+       	 	laracorkrey@gmail.com
+       	 </a>
+       	</p>
+      </div>
+
+
+	</body>
+
+</html>
